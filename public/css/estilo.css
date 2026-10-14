@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
@@ -23,7 +23,7 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  padding: 4px;
+  padding: 6px;
 }
 
 .header .container {
@@ -36,13 +36,43 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 600;
+  transition: 0.3s;
 }
 
-.header .botao-header {
-  background-color: #702044;
-  border-radius: 20px;
-  padding: 5px;
+.header .btn-entrar {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #702044;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: 0.3s;
 }
+
+.header .btn-entrar:hover {
+  background-color: rgba(112, 32, 68, 0.2);
+  border-color: #702044;
+}
+
+.header a:hover {
+  color: #702044;
+}
+
+.header .btn-cadastrar {
+  display: inline-block;
+  padding: 11px 20px;
+  border: 1px solid #702044;
+  border-radius: 8px;
+  background-color: #702044;
+  transition: 0.3s;
+}
+
+.header .btn-cadastrar:hover {
+  background-color: #702044;
+  border-color: #702044;
+  color: white;
+}
+
+
 
 .agora {
   font-weight: 800;
@@ -56,23 +86,12 @@ body {
   justify-content: space-between;
   list-style: none;
   color: white;
+  gap: 20px;
 }
-
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
-}
-
-.header h1 {
-  margin: 0;
-}
-
-/* BANNER */
 
 .banner {
   height: 891px;
-  width: 1340px;
+  width: screen;
   color: white;
   background-image: url('../assets/imgs/banner.png');
   background-size: cover;
@@ -95,15 +114,15 @@ body {
   font-weight: 800;
 }
 
-/* MISSÃO VISÃO VALORES */
+/* ORIGEM */
 
-.origem {
+.box {
   display: flex;
-  color:white;
+  color: white;
   margin-top: 30px;
 }
 
-.origem .container {
+.box .container {
   justify-content: center;
 }
 
@@ -114,36 +133,38 @@ body {
   border-radius: 50px;
 }
 
-.origem .container .boxes {
+.box .container .boxes {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 30px 0;
 }
 
-
-
-.origem h4 {
-  width: 80px;
-  font-size: 20px;
-  padding: 8px;
+.badge {
+  padding: 12px;
+  font-size: 12px;
+  letter-spacing: 2px;
   border: 2px solid #702044;
   border-radius: 50px;
   color: #702044;
 }
 
-.origem h1 {
-  font-size: 40px;
+.box h1 {
+  font-size: 42px;
+  font-weight: 800;
   color: #BBB6B6;
 }
 
-.origem span {
+.box span {
   color: #702044;
 }
 
-.box .origem p {
-  font-size: 40px;
-  font-weight: 500;
+.box .info-box p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: white;
 }
 
 .box {
@@ -154,13 +175,235 @@ body {
 .info-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.origem .info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 92px;
 }
 
-/* FOOTER */
+.box h4 {
+  color: white;
+}
 
+.sub-informacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-informacoes .capitulo {
+  color: #BBB6B6;
+}
+
+/* MOMENTOS */
+.momentos {
+  color: white;
+  padding: 80px 0;
+  margin-top: 30px;
+}
+
+.momentos .container {
+  display: flex;
+  justify-content: center;
+}
+
+.momentos-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.momentos .info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.momentos .badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 9px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #702044;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.momentos h1 {
+  margin: 0 0 25px;
+  color: #BBB6B6;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.momentos .destaque-titulo {
+  color: #702044;
+}
+
+.momentos .citacao {
+  margin: 0 0 30px;
+  padding-left: 20px;
+  border-left: 3px solid #702044;
+  color: #D5CDD2;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.momentos .destaque {
+  color: #702044;
+  font-weight: 700;
+}
+
+.momentos .autor {
+  margin-bottom: 25px;
+}
+
+.momentos .autor span,
+.momentos .label-info {
+  color: #A69AA3;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.momentos .autor h4,
+.momentos .sub-informacoes h4 {
+  margin: 6px 0 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.momentos .sub-informacoes {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #39232F;
+}
+
+.momentos-box img {
+  width: 420px;
+  height: 480px;
+  object-fit: cover;
+  border: 1px solid #702044;
+  border-radius: 20px;
+}
+
+
+/* PROPOSITO */
+.proposito .container .info-box h1 {
+  font-size: 22px;
+}
+
+.box-2 {
+  display: flex;
+  color: white;
+  margin-top: 30px;
+}
+
+.box-2 .container {
+  justify-content: center;
+}
+
+.box-2 img {
+  width: 500px;
+  height: 640px;
+  /* border: 2px solid #702044; */
+  border-radius: 50px;
+}
+
+.box-2 .container .boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.badge {
+  padding: 12px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: 2px solid #702044;
+  border-radius: 50px;
+  color: #702044;
+}
+
+.box-2 h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #BBB6B6;
+}
+
+.box-2 span {
+  color: #702044;
+}
+
+.box-2 .info-box p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: white;
+}
+
+.box-2 {
+  display: flex;
+  align-items: center;
+}
+
+.box-2 h4 {
+  color: white;
+}
+
+.container-proposito {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.card-proposito h3 {
+  text-align: center;
+}
+
+.container-proposito .card-proposito p {
+  font-size: 14px;
+}
+
+.proposito .card-proposito {
+  padding: 22px;
+  border: 1px solid #492337;
+  border-radius: 16px;
+  }
+
+.card-proposito:hover {
+  background-color: #702044;
+  transition: 0.2s;
+}
+
+.titulo-proposito {
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.titulo-proposito span {
+  color: #702044;
+  text-decoration: underline;
+}
+
+/* FOOTER */
 .footer {
-  background-color: #32b9cd;
+  border-top: 2px solid #702044;
   height: 150px;
   color: #fff;
   display: flex;
@@ -168,6 +411,9 @@ body {
 }
 
 .footer .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
   justify-content: center;
   text-align: center;
 }
