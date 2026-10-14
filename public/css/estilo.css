@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: black;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
+  padding: 4px;
 }
 
 .header .container {
@@ -34,7 +34,14 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: white;
+  font-weight: 600;
+}
+
+.header .botao-header {
+  background-color: #702044;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 .agora {
@@ -42,12 +49,13 @@ body {
 }
 
 .navbar {
-  width: 300px;
+  width: 500px;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: white;
 }
 
 .titulo {
@@ -63,9 +71,10 @@ body {
 /* BANNER */
 
 .banner {
-  height: var(--tamanho-banner);
+  height: 891px;
+  width: 1340px;
   color: white;
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/imgs/banner.png');
   background-size: cover;
 }
 
@@ -88,34 +97,64 @@ body {
 
 /* MISSÃO VISÃO VALORES */
 
-.social {
-  background-color: #e5e5e5;
+.origem {
   display: flex;
+  color:white;
+  margin-top: 30px;
 }
 
-.social .container {
+.origem .container {
   justify-content: center;
 }
 
 .box img {
-  width: 170px;
+  width: 434px;
+  height: 500px;
+  border: 2px solid #702044;
+  border-radius: 50px;
 }
 
-.social .container .boxes {
+.origem .container .boxes {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 30px 0;
 }
 
-.social p {
-  text-align: center;
+
+
+.origem h4 {
+  width: 80px;
+  font-size: 20px;
+  padding: 8px;
+  border: 2px solid #702044;
+  border-radius: 50px;
+  color: #702044;
+}
+
+.origem h1 {
+  font-size: 40px;
+  color: #BBB6B6;
+}
+
+.origem span {
+  color: #702044;
+}
+
+.box .origem p {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .box {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 92px;
 }
 
 /* FOOTER */
@@ -237,7 +276,7 @@ body {
 
 /* FORMULARIO */
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
 }
@@ -254,7 +293,7 @@ body {
   margin-right: 10%;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
@@ -310,7 +349,7 @@ input {
 
 .simulador .container {
   flex-direction: column;
-  overflow: scroll; 
+  overflow: scroll;
   height: var(--tamanho-simulador);
 }
 
@@ -354,9 +393,23 @@ input {
 }
 
 @keyframes bell {
-  0%   {transform: rotate(25deg)}
-  25%  {transform: rotate(-25deg)}
-  50%  {transform: rotate(25deg)}
-  75%  {transform: rotate(-25deg)}
-  100% {transform: rotate(25deg)}
+  0% {
+    transform: rotate(25deg)
+  }
+
+  25% {
+    transform: rotate(-25deg)
+  }
+
+  50% {
+    transform: rotate(25deg)
+  }
+
+  75% {
+    transform: rotate(-25deg)
+  }
+
+  100% {
+    transform: rotate(25deg)
+  }
 }
