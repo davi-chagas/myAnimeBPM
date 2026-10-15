@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-footer: 65px;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    height: var(--tamanho-header);
+    position: relative;
+    background: linear-gradient(to bottom,
+            transparent 60%,
+            rgba(229, 9, 20, 0.15) 80%,
+            rgba(229, 9, 20, 0.45) 100%);
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header .btn-entrar {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #A61932;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.header .btn-entrar:hover {
+    background-color: rgba(112, 32, 68, 0.2);
+    border-color: #A61932;
+}
+
+.header a:hover {
+    color: #A61932;
+}
+
+.header .btn-cadastrar {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #A61932;
+    border-radius: 8px;
+    background-color: #A61932;
+    transition: 0.3s;
+}
+
+.header .btn-cadastrar:hover {
+    background-color: #A61932;
+    border-color: #A61932;
+    color: white;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+.navbar {
+    width: 500px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    gap: 20px;
+
+}
+
+.feed-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo-feed span {
+    color: #A61932;
+}
+
+.btn-post {
+    background-color: #A61932;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+    color: white;
+}
+
+.perfil-container img {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+
+    border-radius: 15px;
+    border: 2px solid #A61932;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.campo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-label {
+    color: #999;
+    font-size: 13px;
+}
+
+.campo-info span:last-child,
+.alterar-senha {
+    font-size: 15px;
+}
+
+.alterar-senha {
+    color: #d52b49;
+    text-decoration: none;
+}
+
+.alterar-senha:hover {
+    text-decoration: underline;
+}
+
+.btn-editar {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+
+    background-color: #A61932;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background-color: #851329;
+}
+
+.footer {
+    height: 150px;
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    background: linear-gradient(to bottom,
+            rgba(229, 9, 20, 0.45) 0%,
+            rgba(229, 9, 20, 0.15) 20%,
+            transparent 40%);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .container .version {
+    font-size: 12px;
+}
+
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background-color: #111111;
+}
+
+/* Parte que você arrasta */
+::-webkit-scrollbar-thumb {
+    background-color: #a52a4a;
+    border-radius: 10px;
+}
+
+/* Cor ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a52a4a;
+}
