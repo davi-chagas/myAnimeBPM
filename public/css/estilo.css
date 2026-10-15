@@ -417,3 +417,25 @@ body {
 .footer .container .version {
   font-size: 12px;
 }
+
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background-color: #111111;
+}
+
+/* Parte que você arrasta */
+::-webkit-scrollbar-thumb {
+    background-color: #a52a4a;
+    border-radius: 10px;
+}
+
+/* Cor ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a52a4a;
+}
