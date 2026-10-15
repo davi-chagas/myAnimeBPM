@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
 }
 
 .label-captura {
@@ -44,7 +45,7 @@ body {
 
 .dash-right .avisos .div-form textarea {
   width: 95%;
-  border: 3px solid #e6005a;
+  border: 3px solid #A61932;
   background-color: white;
   border-radius: 5px;
 }
@@ -58,7 +59,7 @@ body {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #A61932;
   width: 120px;
 }
 
@@ -71,7 +72,7 @@ body {
   font-size: 14px;
   padding: 5px 8px;
   color: white;
-  background-color: #e6005a;
+  background-color: #A61932;
   width: 80px;
 }
 
@@ -82,7 +83,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 3px solid #e6005a;
+  border-bottom: 3px solid #A61932;
   padding: 20px;
 }
 
@@ -120,7 +121,7 @@ body {
   position: relative;
   top: 0;
   left: 20%;
-  background-color: #161618;
+  background-color: #A61932;
   height: 100vh;
   overflow: auto;
 }
@@ -285,7 +286,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   padding: 10px 15px;
-  color: #e6005a;
+  color: #A61932;
   background-color: white;
   margin: 5px;
   border-radius: 3px;
@@ -294,11 +295,11 @@ body {
 
 .btn-pink {
   color: white;
-  background-color: #e6005a;
+  background-color: #A61932;
 }
 
 .btn-white {
-  color: #e6005a;
+  color: #A61932;
   background-color: white;
 
 }
@@ -347,15 +348,12 @@ canvas {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
 }
 
 .dash-right {
   display: flex;
   width: 70%;
   height: fit-content;
-  background-color: #161618;
   position: relative;
   top: 0;
   left: 25%;
@@ -388,7 +386,7 @@ canvas {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #A61932;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -396,15 +394,15 @@ canvas {
 
 .btn-nav-white {
   width: 40%;
-  background-color: white;
-  border: 3px solid #e6005a;
+  background-color: #A61932;
+  border: 3px solid #A61932;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: white;
   padding: 0;
   margin: 0;
 }
@@ -419,11 +417,58 @@ canvas {
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: #32b9cd;
+  background-color: #A61932;
   color: white;
   border-radius: 10px;
   text-align: center;
   padding: 10px 15px;
   margin-bottom: 100px;
   cursor: pointer;
+}
+
+
+.kpis {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+}
+
+.kpi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    min-height: 125px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+
+.kpi-titulo {
+    color: #e0e0e0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.kpi strong {
+    margin: 8px 0;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.kpi-descricao {
+    color: #c45a6d;
+    font-size: 11px;
 }
