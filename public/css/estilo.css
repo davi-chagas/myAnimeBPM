@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
   margin: 0;
@@ -23,7 +24,11 @@ body {
 
 .header {
   height: var(--tamanho-header);
-  padding: 6px;
+  position: relative;
+  background: linear-gradient(to bottom,
+      transparent 60%,
+      rgba(229, 9, 20, 0.15) 80%,
+      rgba(229, 9, 20, 0.45) 100%);
 }
 
 .header .container {
@@ -42,7 +47,7 @@ body {
 .header .btn-entrar {
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid #702044;
+  border: 1px solid #A61932;
   border-radius: 8px;
   background-color: transparent;
   transition: 0.3s;
@@ -50,25 +55,25 @@ body {
 
 .header .btn-entrar:hover {
   background-color: rgba(112, 32, 68, 0.2);
-  border-color: #702044;
+  border-color: #A61932;
 }
 
 .header a:hover {
-  color: #702044;
+  color: #A61932;
 }
 
 .header .btn-cadastrar {
   display: inline-block;
   padding: 11px 20px;
-  border: 1px solid #702044;
+  border: 1px solid #A61932;
   border-radius: 8px;
-  background-color: #702044;
+  background-color: #A61932;
   transition: 0.3s;
 }
 
 .header .btn-cadastrar:hover {
-  background-color: #702044;
-  border-color: #702044;
+  background-color: #A61932;
+  border-color: #A61932;
   color: white;
 }
 
@@ -88,18 +93,18 @@ body {
 }
 
 .banner {
-    height: 891px;
-    width: 100%;
-    color: white;
-    background-image: url('../assets/imgs/banner.png');
-    background-size: cover;
-    background-position: center;
+  height: 891px;
+  width: 100%;
+  color: white;
+  background-image: url('../assets/imgs/banner.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .banner .container {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* ORIGEM */
@@ -134,7 +139,7 @@ body {
 .box img {
   width: 434px;
   height: 500px;
-  border: 2px solid #702044;
+  border: 2px solid #A61932;
   border-radius: 50px;
 }
 
@@ -149,9 +154,9 @@ body {
   padding: 12px;
   font-size: 12px;
   letter-spacing: 2px;
-  border: 2px solid #702044;
+  border: 2px solid #A61932;
   border-radius: 50px;
-  color: #702044;
+  color: #A61932;
 }
 
 .box h1 {
@@ -161,7 +166,7 @@ body {
 }
 
 .box span {
-  color: #702044;
+  color: #A61932;
 }
 
 .box .info-box p {
@@ -237,7 +242,7 @@ body {
   width: fit-content;
   padding: 9px 15px;
   margin-bottom: 25px;
-  border: 1px solid #702044;
+  border: 1px solid #A61932;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
@@ -253,7 +258,7 @@ body {
 }
 
 .momentos .destaque-titulo {
-  color: #702044;
+  color: #A61932;
 }
 
 .momentos .citacao {
@@ -264,7 +269,7 @@ body {
 }
 
 .momentos .destaque {
-  color: #702044;
+  color: #A61932;
   font-weight: 700;
 }
 
@@ -299,7 +304,7 @@ body {
   width: 420px;
   height: 480px;
   object-fit: cover;
-  border: 1px solid #702044;
+  border: 1px solid #A61932;
   border-radius: 20px;
 }
 
@@ -323,72 +328,78 @@ body {
   max-width: 1200px;
 }
 
-.proposito-box img {
-  width: 500px;
-  height: 640px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.proposito .info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  min-width: 0;
-}
-
-.proposito .badge {
-  display: inline-block;
-  width: fit-content;
-  margin-bottom: 20px;
-}
-
 .proposito .titulo-proposito {
-  margin: 0 0 25px;
-  font-size: 26px;
-  line-height: 1.5;
-  color: #BBB6B6;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #A61932;
 }
 
-.proposito .titulo-proposito span {
-  display: block;
-  margin-top: 8px;
+.proposito .info-box p {
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.proposito .info-box span {
+  color:#FF3131;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+    font-size: 30px;
+
+}
+
+.proposito .info-box .titulo-logo {
+  color:white;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Anton", sans-serif;
 }
 
 .proposito .cards-proposito {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 15px;
-  width: 100%;
+  display: flex;
+  gap: 20px
 }
 
 .proposito .card-proposito {
   min-width: 0;
   padding: 15px;
-  border: 1px solid #702044;
   border-radius: 16px;
   box-sizing: border-box;
 }
 
+.proposito .card-proposito h1 {
+  font-size: 80px;
+  color: #FF3131;
+  text-align: center;
+}
 .proposito .card-proposito h3 {
-  margin-top: 0;
   color: white;
+  text-align: center;
 }
 
 .proposito .card-proposito p {
+  background-color: #A61932;
+  border-radius: 8px;
+  padding: 8px;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
-  color: #BBB6B6;
+  color: white;
 }
 
 .footer {
-  border-top: 2px solid #702044;
   height: 150px;
   color: #fff;
   display: flex;
   font-size: 15px;
+
+  background: linear-gradient(to bottom,
+      rgba(229, 9, 20, 0.45) 0%,
+      rgba(229, 9, 20, 0.15) 20%,
+      transparent 40%);
 }
 
 .footer .container {
